@@ -1,0 +1,71 @@
+@import "./reset";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+:root {
+	--header-height: 3rem;
+
+	--base-color: 190;
+
+	--first-color: hsl(var(--base-color), 64%, 22%);
+	--first-color-second: hsl(var(--base-color), 64%, 22%);
+	--first-color-alt: hsl(var(--base-color), 64%, 15%);
+	--title-color: hsl(var(--base-color), 64%, 18%);
+	--text-color: hsl(var(--base-color), 24%, 35%);
+	--text-color-light: hsl(var(--base-color), 8%, 60%);
+	--input-color: hsl(var(--base-color), 24%, 97%);
+	--body-color: hsl(var(--base-color), 100%, 99%);
+	--white-color: #fff;
+
+	--scroll-bar-color: hsl(var(--base-color), 12%, 90%);
+	--scroll-thumb-color: hsl(var(--base-color), 12%, 75%);
+
+	--body-font: "Poppins", sans-serif;
+	--title-font: "Open Sans", sans-serif;
+
+	--biggest-font-size: 2.5rem;
+	--h1-font-size: 1.5rem;
+	--h2-font-size: 1.25rem;
+	--h3-font-size: 1rem;
+	--normal-font-size: 0.938rem;
+	--small-font-size: 0.813rem;
+	--smaller-font-size: 0.75rem;
+
+	@media screen and (min-width: 968px) {
+		--biggest-font-size: 4rem;
+		--h1-font-size: 2.25rem;
+		--h2-font-size: 1.75rem;
+		--h3-font-size: 1.25rem;
+		--normal-font-size: 1rem;
+		--small-font-size: 0.875rem;
+		--smaller-font-size: 0.813rem;
+	}
+
+	--font-medium: 500;
+	--font-semi-bold: 600;
+
+	--mb-0-25: 0.25rem;
+	--mb-0-5: 0.5rem;
+	--mb-0-75: 0.75rem;
+	--mb-1: 1rem;
+	--mb-1-25: 1.25rem;
+	--mb-1-5: 1.5rem;
+	--mb-2: 2rem;
+	--mb-2-5: 2.5rem;
+
+	--z-tooltip: 10;
+	--z-fixed: 100;
+
+	--img-transition: 0.3s;
+	--img-hidden: hidden;
+	--img-scale: scale(1.1);
+}
+body.dark-theme {
+	--first-color-second: hsl(var(--base-color), 54%, 12%);
+	--title-color: hsl(var(--base-color), 24%, 95%);
+	--text-color: hsl(var(--base-color), 8%, 75%);
+	--input-color: hsl(var(--base-color), 29%, 16%);
+	--body-color: hsl(var(--base-color), 29%, 12%);
+
+	--scroll-bar-color: hsl(var(--base-color), 12%, 48%);
+	--scroll-thumb-color: hsl(var(--base-color), 12%, 36%);
+}
