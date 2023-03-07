@@ -31,7 +31,7 @@ const sr = ScrollReveal({
 	distance: "60px",
 	duration: 2800,
 });
-sr.reveal(`.home__data, .home__social-link,.home__info,.package__card,.footer__data, .footer__rights`, {
+sr.reveal(`.home__data, .home__social-link,.home__info,.package__card,.footer__data, .footer__rights, .callus__data`, {
 	origin: "top",
 	interval: 100,
 });

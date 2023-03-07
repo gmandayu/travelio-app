@@ -2,173 +2,91 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta
-			http-equiv="X-UA-Compatible"
-			content="IE=edge" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0" />
-		<!-- link to font-awesome -->
-		<link
-			rel="stylesheet"
-			href="https://kit.fontawesome.com/fd6ea68552.css"
-			crossorigin="anonymous" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<!-- link to css -->
-		<link
-			rel="stylesheet"
-			href="./src/styles/style.css" />
+		<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+		<link rel="stylesheet" href="https://kit.fontawesome.com/fd6ea68552.css" crossorigin="anonymous" />
+
+		<link rel="stylesheet" href="./src/styles/style.css" />
 
 		<title>Travelio - Your Travel Partner!</title>
 	</head>
-	<body>
-		<header
-			class="header"
-			id="header">
+	<body onload="javascript:setInterval('playImageArray()',2000)">
+		<header class="header" id="header">
 			<nav class="nav container">
-				<a
-					href="#"
-					class="nav__logo">
+				<a href="#" class="nav__logo">
 					<span style="margin-left: 2px">TRAVELIO</span>
 				</a>
-				<div
-					class="nav__menu"
-					id="nav-menu">
+				<div class="nav__menu" id="nav-menu">
 					<ul class="nav__list">
 						<li class="nav__item">
-							<a
-								href="#home"
-								class="nav__link active-link"
-								>Home</a
-							>
+							<a href="#home" class="nav__link active-link">Home</a>
 						</li>
 						<li class="nav__item">
-							<a
-								href="#about"
-								class="nav__link"
-								>About</a
-							>
+							<a href="#about" class="nav__link">About</a>
 						</li>
 						<li class="nav__item">
-							<a
-								href="#package"
-								class="nav__link"
-								>Packages</a
-							>
+							<a href="#package" class="nav__link">Packages</a>
 						</li>
 						<li class="nav__item">
-							<a
-								href="#callus"
-								class="nav__link"
-								>Contact</a
-							>
+							<a href="#callus" class="nav__link">Contact</a>
 						</li>
 					</ul>
-					<!-- dark theme -->
+
 					<div class="nav__dark">
 						<span class="change-theme-name">Dark mode</span>
-						<i
-							class="fa-solid fa-moon change-theme"
-							id="theme-button"></i>
+						<i class="ri-moon-fill change-theme" id="theme-button"></i>
 					</div>
-					<i
-						class="fa-solid fa-circle-xmark nav__close"
-						id="nav-close"></i>
+					<i class="ri-close-fill nav__close" id="nav-close"> </i>
 				</div>
 
-				<div
-					class="nav__toggle"
-					id="nav-toggle">
-					<i class="fa-solid fa-bars"></i>
+				<div class="nav__toggle" id="nav-toggle">
+					<i class="ri-menu-fill"></i>
 				</div>
 			</nav>
 		</header>
 
 		<main class="main">
 			<!-- home -->
-			<section
-				class="home"
-				id="home">
-				<!--  -->
-				<!--  -->
-				<div class="img-gradient"></div>
-				<img
-					src="https://source.unsplash.com/341OczdirBM/2400x1600"
-					alt=""
-					class="home__img" />
+			<section class="home" id="home">
+				<div id="slideshow">
+					<img id="slide" src="https://source.unsplash.com/341OczdirBM/2400x1600" alt="slideshow" class="home__img" />
 
-				<div class="home__container container grid">
-					<div class="home__data">
-						<h1 class="home__data-title">
-							Your
-							<span>Trusted</span>
-							Travel Agent's
-						</h1>
-						<span class="home__data-subtitle">Your happiness is our happiness</span>
-						<a
-							href="#package"
-							class="button"
-							>Explore <i class="fa-solid fa-arrow-right"></i
-						></a>
-					</div>
-
-					<div class="home__social">
-						<a
-							href="https://www.facebook.com/"
-							target="_blank"
-							class="home__social-link">
-							<i class="fa-brands fa-square-facebook"></i>
-						</a>
-						<a
-							href="https://www.instagram.com/"
-							target="_blank"
-							class="home__social-link">
-							<i class="fa-brands fa-square-instagram"></i>
-						</a>
-						<a
-							href="https://twitter.com/"
-							target="_blank"
-							class="home__social-link">
-							<i class="fa-brands fa-square-twitter"></i>
-						</a>
-					</div>
-
-					<!-- testimonials-->
-					<div class="home__info">
-						<div class="home__info-card">
-							<span class="home__info-title">Florence Hughes</span>
-							<span class="home__info-subtitle">Content Writer, 28</span>
-							<span class="home__info-review">"My vacation becomes great with Travelio!"</span>
+					<div class="home__container container grid">
+						<div class="home__data">
+							<span class="home__data-subtitle">Your happiness is our happiness</span>
+							<h1 class="home__data-title">Your <span>Trusted</span> Travel Agent's</h1>
+							<a href="#about" class="button">Explore <i class="fa-solid fa-arrow-right"></i></a>
 						</div>
 
-						<!-- <div class="home__info-overlay">
-							<img
-								src="./src/assets/images/Funny Bunny-2.png"
-								alt=""
-								class="home__info-img" />
-						</div> -->
+						<div class="home__social">
+							<a href="https://www.facebook.com/" target="_blank" class="home__social-link">
+								<i class="fa-brands fa-square-facebook"></i>
+							</a>
+							<a href="https://www.instagram.com/" target="_blank" class="home__social-link">
+								<i class="fa-brands fa-square-instagram"></i>
+							</a>
+							<a href="https://twitter.com/" target="_blank" class="home__social-link">
+								<i class="fa-brands fa-square-twitter"></i>
+							</a>
+						</div>
+
+						<!-- testimonials-->
+						<div class="home__info">
+							<div class="home__info-card">
+								<span class="home__info-title">Florence Hughes</span>
+								<span class="home__info-subtitle">Content Writer, 28</span>
+								<span class="home__info-review">"My vacation becomes great with Travelio!"</span>
+							</div>
+						</div>
 					</div>
 				</div>
-				<!--  -->
-
-				<!-- slider -->
-				<!-- <div class="slider">
-					<div class="slider__content">
-						<button class="slider__btn-left">
-							<i class="fas fa-angle-left"></i>
-						</button>
-						<div class="slider__feature"></div>
-						<button class="slider__btn-right">
-							<i class="fas fa-angle-right"></i>
-						</button>
-					</div>
-				</div> -->
 			</section>
 
 			<!-- about -->
-			<section
-				class="about section"
-				id="about">
+			<section class="about section" id="about">
 				<div class="about__container container grid">
 					<div class="about__data">
 						<h2 class="section__title about__title">More Information About Our Services</h2>
@@ -185,44 +103,29 @@
 							And that too at competitive rates to not waste the hard-earned money. We book flight tickets on the best
 							airlines at the most affordable cost with a vast network for years.
 						</p>
-						<a
-							href="#"
-							class="button"
-							>Reserve now <i class="fa-solid fa-book"></i
-						></a>
+						<a href="#package" class="button">Reserve now <i class="fa-solid fa-book"></i></a>
 					</div>
 
 					<div class="about__img">
 						<div class="about__img-overlay">
-							<img
-								src="https://source.unsplash.com/OOTEpsO2eV0/1920x2624"
-								alt=""
-								class="about__img-one" />
+							<img src="https://source.unsplash.com/OOTEpsO2eV0/1920x2624" alt="" class="about__img-one" />
 						</div>
 
 						<div class="about__img-overlay">
-							<img
-								src="https://source.unsplash.com/C782FdI_I2Q/1920x2624"
-								alt=""
-								class="about__img-two" />
+							<img src="https://source.unsplash.com/C782FdI_I2Q/1920x2624" alt="" class="about__img-two" />
 						</div>
 					</div>
 				</div>
 			</section>
 
 			<!-- packages -->
-			<section
-				class="package section"
-				id="package">
+			<section class="package section" id="package">
 				<h2 class="section__title">Our Packages</h2>
 
 				<div class="package__container container grid">
-					<!-- bali -->
+					<!-- ! BALI -->
 					<div class="package__card">
-						<img
-							src="https://source.unsplash.com/Bi_5VsaOLnI/2400x3200"
-							alt=""
-							class="package__img" />
+						<img src="https://source.unsplash.com/OOTEpsO2eV0/1920x2624" alt="" class="package__img" />
 
 						<div class="package__content">
 							<span class="package__rating">
@@ -243,12 +146,9 @@
 						</button>
 					</div>
 
-					<!-- japan -->
+					<!-- ! JAPAN -->
 					<div class="package__card">
-						<img
-							src="https://source.unsplash.com/VCM99u6HltA/2400x3200"
-							alt=""
-							class="package__img" />
+						<img src="https://source.unsplash.com/OOTEpsO2eV0/1920x2624" alt="" class="package__img" />
 
 						<div class="package__content">
 							<span class="package__rating">
@@ -267,12 +167,9 @@
 						</button>
 					</div>
 
-					<!-- singapore -->
+					<!-- ! SINGAPORE -->
 					<div class="package__card">
-						<img
-							src="https://source.unsplash.com/oe58Jkzp1es/2400x3200"
-							alt=""
-							class="package__img" />
+						<img src="https://source.unsplash.com/OOTEpsO2eV0/1920x2624" alt="" class="package__img" />
 
 						<div class="package__content">
 							<span class="package__rating">
@@ -286,17 +183,14 @@
 							</div>
 						</div>
 
-						<button class="button button__flex package__button">
+						<button class="button button__flex package__button" aria-labelledby="btn">
 							<i class="fa-solid fa-arrow-right"></i>
 						</button>
 					</div>
 
-					<!-- bali -->
+					<!-- ! DUBAI -->
 					<div class="package__card">
-						<img
-							src="https://source.unsplash.com/Bi_5VsaOLnI/2400x3200"
-							alt=""
-							class="package__img" />
+						<img src="https://source.unsplash.com/OOTEpsO2eV0/1920x2624" alt="" class="package__img" />
 
 						<div class="package__content">
 							<span class="package__rating">
@@ -304,7 +198,7 @@
 								<span class="package__rating-number">4.7/5.0</span>
 							</span>
 							<div class="package__data">
-								<h3 class="package__title">Bali</h3>
+								<h3 class="package__title">Dubai</h3>
 								<span class="package__subtitle"
 									>Bali is more than a place. It’s a mood, it’s magical. It’s a tropical state of mind.</span
 								>
@@ -317,12 +211,9 @@
 						</button>
 					</div>
 
-					<!-- bali -->
+					<!-- ! AUSTRALIA -->
 					<div class="package__card">
-						<img
-							src="https://source.unsplash.com/Bi_5VsaOLnI/2400x3200"
-							alt=""
-							class="package__img" />
+						<img src="https://source.unsplash.com/OOTEpsO2eV0/1920x2624" alt="" class="package__img" />
 
 						<div class="package__content">
 							<span class="package__rating">
@@ -330,7 +221,7 @@
 								<span class="package__rating-number">4.7/5.0</span>
 							</span>
 							<div class="package__data">
-								<h3 class="package__title">Bali</h3>
+								<h3 class="package__title">Australia</h3>
 								<span class="package__subtitle"
 									>Bali is more than a place. It’s a mood, it’s magical. It’s a tropical state of mind.</span
 								>
@@ -343,12 +234,9 @@
 						</button>
 					</div>
 
-					<!-- bali -->
+					<!-- ! SOUTH KOREA -->
 					<div class="package__card">
-						<img
-							src="https://source.unsplash.com/Bi_5VsaOLnI/2400x3200"
-							alt=""
-							class="package__img" />
+						<img src="https://source.unsplash.com/OOTEpsO2eV0/1920x2624" alt="" class="package__img" />
 
 						<div class="package__content">
 							<span class="package__rating">
@@ -356,7 +244,7 @@
 								<span class="package__rating-number">4.7/5.0</span>
 							</span>
 							<div class="package__data">
-								<h3 class="package__title">Bali</h3>
+								<h3 class="package__title">South Korea</h3>
 								<span class="package__subtitle"
 									>Bali is more than a place. It’s a mood, it’s magical. It’s a tropical state of mind.</span
 								>
@@ -364,7 +252,7 @@
 							</div>
 						</div>
 
-						<button class="button button__flex package__button">
+						<button class="button button__flex package__button" aria-labelledby="btn">
 							<i class="fa-solid fa-arrow-right"></i>
 						</button>
 					</div>
@@ -372,83 +260,67 @@
 			</section>
 
 			<!-- call us -->
-			<section
-				class="callus section"
-				id="callus">
-				<div class="callus_container container grid">
+			<section class="callus section" id="callus">
+				<div class="callus__container container grid">
 					<div class="callus__data">
 						<h2 class="section__title callus__title">Discover The Most Attactive Places</h2>
 						<p class="callus__description">
-							You can find the most beautiful and pleasant places at the best prices with special discounts, you choose
-							the place we will guide you all the way to wait, get your place now.
+							You can find the most beautiful and pleasant places at the best prices with special discounts, get your
+							place now.
 						</p>
-					</div>
-					<div class="callus__data-container">
+
 						<div class="callus__img">
 							<div class="callus__img-overlay">
-								<img
-									src="https://source.unsplash.com/OOTEpsO2eV0/1920x2624"
-									alt=""
-									class="callus__img-one" />
+								<img src="https://source.unsplash.com/YpkuRn54y4w/2400x1600" alt="" class="callus__img-one" />
 							</div>
-							<!-- <div class="callus__img-overlay">
-								<img
-									src="https://source.unsplash.com/OOTEpsO2eV0/1920x2624"
-									alt=""
-									class="callus__img-two" />
-							</div> -->
 						</div>
-						<div class="callus__form">
-							<!-- <div class="callus__form-overlay"></div> -->
-							<h1>Contact Us</h1>
-							<p>Our sales will call you in 24 hours after you submitted this form.</p>
-							<form action="">
-								<div class="inner__wrap">
-									<label for="full-name">Full Name</label>
-									<input
-										type="text"
-										id="full-name"
-										placeholder="Full name" />
+					</div>
 
-									<label for="email-address">Email Address</label>
-									<input
-										type="text"
-										id="email-address"
-										placeholder="Email Address" />
+					<div class="callus__form">
+						<h4 class="section__title callus__title">Contact Us</h4>
+						<p>Our sales will call you in 24 hours after you submitted this form.</p>
+						<form action="" name="tform" id="form" onsubmit="return validate()">
+							<div class="inner__wrap">
+								<label for="full-name">Full Name</label>
+								<input type="text" id="name" name="Name" />
 
-									<label for="interested">What are you interested in?</label>
-									<select
-										name=""
-										id="interested"
-										aria-placeholder="Select option">
-										<option value="value-1">Select option</option>
-										<option value="value-2">Climbing</option>
-										<option value="value-3">Walking</option>
-									</select>
+								<label for="email-address">Email Address</label>
+								<input type="text" id="email" name="EMail" />
 
-									<a
-										href="#send-form"
-										class="button button__flex"
-										>Send <i class="fa-sharp fa-solid fa-paper-plane"></i
-									></a>
-								</div>
-							</form>
-						</div>
+								<label for="interested">What are you interested in?</label>
+								<select name="Interest" id="interest">
+									<option value="-1" selected>Select option</option>
+									<option value="1">Climbing</option>
+									<option value="2">Walking</option>
+								</select>
+
+								<button type="submit" id="submit" class="button" style="width: 100%; align-items: center">
+									Send<i class="fa-sharp fa-solid fa-paper-plane" style="padding-left: 5px"></i>
+								</button>
+							</div>
+						</form>
 					</div>
 				</div>
 			</section>
 		</main>
+		<footer>
+			<div class="fixed-footer">
+				<span class="footer__span"
+					>Made with <span><i class="fa-solid fa-mug-hot"></i></span> for REVOU Software Engineering Mini Cource</span
+				>
+			</div>
+		</footer>
 
-		<!-- <script src="./src/js/ImageSlider.js"></script> -->
-		<!-- <script src="./src/js/NotInspect.js"></script> -->
-		<script src="./src/js/ThemeChanger.js"></script>
-		<script src="./src/js/ShowMenu.js"></script>
-		<script src="./src/js/RemoveMenuMobile.js"></script>
-		<script src="./src/js/ChangeBackgroundHeader.js"></script>
-		<script src="./src/js/ShowScrollUp.js"></script>
+		<script src="./src/js/changeHeaderBackground.js"></script>
+		<script src="./src/js/imageSlider.js"></script>
+		<script src="./src/js/removeMobileMenu.js"></script>
+		<script src="./src/js/scrollUp.js"></script>
+		<script src="./src/js/showMenu.js"></script>
+		<script src="./src/js/themeChanger.js"></script>
+		<script src="./src/js/notInspect.js"></script>
+		<script src="/src/js/formValidate.js" async defer crossorigin="anonymous"></script>
+
 		<!-- font-awesome script -->
-		<script
-			src="https://kit.fontawesome.com/fd6ea68552.js"
-			crossorigin="anonymous"></script>
+		<script src="https://kit.fontawesome.com/fd6ea68552.js" crossorigin="anonymous"></script>
 	</body>
 </html>

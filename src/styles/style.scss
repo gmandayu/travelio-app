@@ -18,7 +18,7 @@
 	--scroll-bar-color: hsl(var(--base-color), 12%, 90%);
 	--scroll-thumb-color: hsl(var(--base-color), 12%, 75%);
 
-	--body-font: "Poppins", sans-serif;
+	--body-font: "Open Sans", sans-serif;
 	--title-font: "Poppins", sans-serif;
 
 	--biggest-font-size: 2.5rem;
@@ -29,8 +29,21 @@
 	--small-font-size: 0.813rem;
 	--smaller-font-size: 0.75rem;
 
+	--font-s-1: calc(20px + 3.5vw);
+	--font-s-2: calc(18px + 1.6vw);
+	--font-s-3: calc(16px + 0.45vw);
+	--font-s-4: 15px;
+	--font-s-5: 14px;
+	--font-s-6: 13px;
+	--font-s-7: 12px;
+	--font-s-8: 11px;
+
 	--font-medium: 500;
 	--font-semi-bold: 600;
+	--font-w-500: 500;
+	--font-w-600: 600;
+	--font-w-700: 700;
+	--font-w-800: 800;
 
 	--mb-0-25: 0.25rem;
 	--mb-0-5: 0.5rem;
@@ -165,7 +178,11 @@ body {
 	gap: 1.5rem;
 }
 
-// slider
+#slideshow img,
+#direction img {
+	width: 100%;
+}
+
 .slider {
 	background-position: center;
 	background-repeat: repeat;
@@ -174,10 +191,11 @@ body {
 	width: 100%;
 
 	&__content {
-		display: flex;
+		position: relative;
 		justify-content: space-between;
 		align-items: center;
 		height: 100vh;
+		width: 100%;
 	}
 
 	&__feature {
@@ -185,10 +203,9 @@ body {
 	}
 
 	&__btn {
-		// background: #fff;
 		text-transform: uppercase;
 		border: none;
-		// color: #444;
+
 		border: 1px solid #444;
 		outline: none;
 		font-weight: 700;
@@ -204,7 +221,6 @@ body {
 			color: #eee;
 			padding: 0 1rem;
 			cursor: pointer;
-			// transition: transform 0.1s ease-in-out;
 
 			&:hover {
 				transform: scale(0.95);
@@ -213,27 +229,13 @@ body {
 	}
 }
 
-// .fadeIn {
-// 	animation: fadeIn 1s;
-// }
-
-// @keyframes fadeIn {
-// 	0% {
-// 		opacity: 0;
-// 	}
-// 	100% {
-// 		opacity: 1;
-// 	}
-// }
-
-// header
 .header {
 	width: 100%;
 	position: fixed;
 	top: 0;
 	left: 0;
 	z-index: var(--z-fixed);
-	background-color: transparent; // transparent
+	background-color: transparent;
 }
 
 .nav {
@@ -307,7 +309,6 @@ body {
 	}
 }
 
-// would work with script
 .show-menu {
 	right: 0;
 }
@@ -322,7 +323,6 @@ body {
 	}
 }
 
-// active link
 .active-link {
 	position: relative;
 	color: var(--title-color);
@@ -346,7 +346,6 @@ body {
 		height: 100vh;
 		object-fit: cover;
 		object-position: 83%;
-		// mask-image: linear-gradient(to top, rgba(0, 0, 0, 0.89), rgba(0, 0, 0, 1));
 	}
 
 	&__container {
@@ -367,15 +366,16 @@ body {
 		&-subtitle {
 			display: block;
 			font-weight: var(--font-semi-bold);
-			margin-bottom: var(--mb-2-5);
+			margin-bottom: var(--mb-0-75);
 		}
 		&-title {
-			font-size: var(--biggest-font-size);
-			font-weight: var(--font-medium);
-			margin-bottom: var(--mb-0-25);
+			font-size: var(--font-s-1);
+			font-weight: var(--font-w-600);
+			margin-bottom: var(--mb-2-5);
+			text-transform: uppercase;
 			& span {
-				font-size: 80px;
-				font-weight: bold;
+				font-weight: var(--font-w-800);
+				font-size: var(--font-s-1);
 			}
 		}
 	}
@@ -462,7 +462,6 @@ body {
 	}
 }
 
-// about
 .about {
 	&__data {
 		text-align: center;
@@ -497,7 +496,6 @@ body {
 	}
 }
 
-// package
 .package {
 	&__card,
 	&__img {
@@ -520,6 +518,8 @@ body {
 
 	&__img {
 		transition: var(--img-transition);
+		background-size: cover;
+		width: 100%;
 	}
 
 	&__content,
@@ -577,47 +577,27 @@ body {
 	}
 }
 
-// callus
 .callus {
 	&__data {
 		text-align: center;
-
-		&-container {
-			padding-top: 5px;
-			overflow: hidden;
-		}
-
-		a {
-			margin-top: 30px;
-			width: 100%;
-			display: inline-block;
-			text-align: center;
-		}
 	}
 	&__container {
 		row-gap: 2.5rem;
 	}
 	&__description {
-		margin-bottom: var(--mb-0-25);
+		margin-bottom: var(--mb-2);
 	}
 	&__img {
-		float: left;
-		// display: flex;
+		display: flex;
 		// column-gap: 1rem;
-		// align-items: center;
-		// justify-content: center;
-
+		align-items: center;
+		justify-content: center;
 		&-overlay {
 			overflow: var(--img-hidden);
 		}
 		&-one {
-			width: 180px;
-		}
-		&-two {
-			width: 130px;
-		}
-		&-one,
-		&-two {
+			// width: 100%;
+			padding-top: 20px;
 			transition: var(--img-transition);
 			&:hover {
 				transform: var(--img-scale);
@@ -625,23 +605,24 @@ body {
 		}
 	}
 	&__form {
-		background: #fff;
-		border-radius: 10px;
-		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+		background: var(--body-color);
+		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.349);
 		float: right;
-		max-width: 450px;
+		max-width: 1024px;
 		padding: 30px;
-		width: 45%;
 
-		& h1 > span {
+		h4 {
+			text-align: center;
+		}
+
+		& h4 > span {
 			display: block;
 			margin-top: 2px;
 			font-size: 13px;
 		}
 
 		& .inner__wrap {
-			border-radius: 6px;
-			// margin-bottom: 15px;
+			border-radius: 0px;
 		}
 
 		& label {
@@ -653,33 +634,34 @@ body {
 			margin-top: 15px;
 			margin-bottom: 5px;
 		}
-		// display: flex;
-		// column-gap: 1rem;
-		// &-overlay {
-		// 	overflow: var(--img-hidden);
-		// }
 
 		& input[type="text"],
 		& select {
 			display: block;
 			box-sizing: border-box;
 			width: 100%;
-			padding: 8px;
-			border-radius: 6px;
+			padding: 10px;
 			border: 2px solid #eee;
+		}
 
-			// box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.33);
-
-			// border-radius: 4px;
-			// border: 1px solid #ccc;
-			// height: 100%;
-			// padding: 5px;
-			// width: 50%;
+		& select {
+			margin-bottom: 20px;
 		}
 	}
 }
 
-// scroll up
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+.fadeIn {
+	animation: fadeIn 1s;
+}
+
 .scrollup {
 	position: fixed;
 	right: 1rem;
@@ -717,7 +699,19 @@ body {
 	background-color: var(--text-color-light);
 }
 
-// media query
+.fixed-footer {
+	width: 100%;
+	position: relative;
+	background: var(--first-color-alt);
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.349);
+	padding: 10px 0;
+	color: var(--white-color);
+	text-align: center;
+}
+.fixed-footer {
+	bottom: 0;
+}
+
 @media screen and (max-width: 340px) {
 	.package {
 		&__container {
@@ -926,10 +920,7 @@ body {
 	.callus {
 		&__img {
 			&-one {
-				width: 230px;
-			}
-			&-two {
-				width: 290px;
+				width: 99%;
 			}
 		}
 	}
