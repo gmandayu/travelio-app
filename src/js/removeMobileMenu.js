@@ -1,4 +1,4 @@
-// remove nav toggle bar in mobile state when menu link click.
+// tutup navbar di mobile device.
 const navLink = document.querySelectorAll(".nav__link");
 
 function linkAction() {
