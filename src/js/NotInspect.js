@@ -1,3 +1,6 @@
+// sorry bro.
+// ga bisa inspect dan open link new tab :v
+
 document.addEventListener("contextmenu", (e) => e.preventDefault());
 function ctrlShiftKey(e, keyCode) {
 	return e.ctrlKey && e.shiftKey && e.keyCode === keyCode.charCodeAt(0);
