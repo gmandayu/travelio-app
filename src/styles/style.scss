@@ -650,10 +650,6 @@ body {
 
 		& select {
 			margin-bottom: 20px;
-			&[disabled] {
-				color: red;
-				// display: none;
-			}
 		}
 	}
 }

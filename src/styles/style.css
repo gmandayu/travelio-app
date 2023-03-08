@@ -572,9 +572,6 @@ body.dark-theme {
 .callus__form select {
   margin-bottom: 20px;
 }
-.callus__form select[disabled] {
-  color: red;
-}
 
 @keyframes fadeIn {
   0% {
