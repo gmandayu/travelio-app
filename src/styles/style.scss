@@ -732,7 +732,7 @@ body {
 	}
 }
 
-@media screen and (min-width: 568px) {
+@media screen and (min-width: 640px) {
 	.package {
 		&__container {
 			grid-template-columns: repeat(3, max-content);
@@ -944,7 +944,7 @@ body {
 	}
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
 	.container {
 		max-width: 1024px;
 	}
