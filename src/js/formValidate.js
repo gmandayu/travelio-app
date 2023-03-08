@@ -20,12 +20,13 @@ function checkInputs() {
 		window.alert("Please provide your name properly!");
 	} else if (emailVal == "") {
 		window.alert("Please provide your email properly!");
-	} else if (interestedVal == -1) {
-		window.alert("Please provide your interest properly!");
 	} else if (!isEmail(emailVal)) {
 		window.alert("Not a valid email!");
+	} else if (interestedVal == -1) {
+		window.alert("Please provide your interest properly!");
 	} else {
 		window.alert("Data saved. Thank you!");
+		clearForm();
 	}
 }
 
@@ -33,4 +34,8 @@ function isEmail(email) {
 	return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
 		email,
 	);
+}
+
+function clearForm() {
+	form.reset();
 }

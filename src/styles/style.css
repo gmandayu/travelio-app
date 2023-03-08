@@ -75,7 +75,8 @@ html {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
   font-family: var(--title-font);
@@ -96,7 +97,9 @@ video {
 }
 
 button,
-input {
+input,
+select,
+option {
   border: none;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
@@ -564,9 +567,13 @@ body.dark-theme {
   width: 100%;
   padding: 10px;
   border: 2px solid #eee;
+  color: var(--first-color);
 }
 .callus__form select {
   margin-bottom: 20px;
+}
+.callus__form select[disabled] {
+  color: red;
 }
 
 @keyframes fadeIn {
