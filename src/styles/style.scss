@@ -61,7 +61,7 @@
 	--img-hidden: hidden;
 	--img-scale: scale(1.1);
 
-	@media screen and (min-width: 968px) {
+	@media (min-width: 968px) {
 		--biggest-font-size: 4rem;
 		--h1-font-size: 2.25rem;
 		--h2-font-size: 1.75rem;
@@ -272,7 +272,7 @@ body {
 	&__menu {
 		position: relative;
 
-		@media screen and (max-width: 767px) {
+		@media (max-width: 767px) {
 			position: fixed;
 			background-color: var(--body-color);
 			top: 0;
@@ -719,7 +719,7 @@ body {
 	bottom: 0;
 }
 
-@media screen and (max-width: 340px) {
+@media (max-width: 340px) {
 	.package {
 		&__container {
 			grid-template-columns: max-content;
@@ -735,7 +735,7 @@ body {
 	}
 }
 
-@media screen and (min-width: 640px) {
+@media (min-width: 640px) {
 	.package {
 		&__container {
 			grid-template-columns: repeat(3, max-content);
@@ -743,7 +743,7 @@ body {
 	}
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
 	body {
 		margin: 0;
 	}
@@ -867,7 +867,7 @@ body {
 	}
 }
 
-@media screen and (min-width: 1024px) {
+@media (min-width: 1024px) {
 	.container {
 		margin-left: auto;
 		margin-right: auto;
@@ -921,13 +921,13 @@ body {
 	}
 }
 
-@media screen and (min-width: 1280px) {
+@media (min-width: 1280px) {
 	.container {
 		max-width: 1024px;
 	}
 }
 
-@media screen and (min-height: 721px) {
+@media (min-height: 721px) {
 	body {
 		margin: 0;
 	}

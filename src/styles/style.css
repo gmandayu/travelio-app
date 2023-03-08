@@ -50,7 +50,7 @@
   --img-hidden: hidden;
   --img-scale: scale(1.1);
 }
-@media screen and (min-width: 968px) {
+@media (min-width: 968px) {
   :root {
     --biggest-font-size: 4rem;
     --h1-font-size: 2.25rem;
@@ -247,7 +247,7 @@ body.dark-theme {
 .nav__menu {
   position: relative;
 }
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   .nav__menu {
     position: fixed;
     background-color: var(--body-color);
@@ -641,7 +641,7 @@ body.dark-theme {
   bottom: 0;
 }
 
-@media screen and (max-width: 340px) {
+@media (max-width: 340px) {
   .package__container {
     grid-template-columns: max-content;
     justify-content: center;
@@ -651,12 +651,12 @@ body.dark-theme {
     padding: 1rem;
   }
 }
-@media screen and (min-width: 640px) {
+@media (min-width: 640px) {
   .package__container {
     grid-template-columns: repeat(3, max-content);
   }
 }
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   body {
     margin: 0;
   }
@@ -757,7 +757,7 @@ body.dark-theme {
     margin-bottom: var(--mb-0-25);
   }
 }
-@media screen and (min-width: 1024px) {
+@media (min-width: 1024px) {
   .container {
     margin-left: auto;
     margin-right: auto;
@@ -793,12 +793,12 @@ body.dark-theme {
     height: 263px;
   }
 }
-@media screen and (min-width: 1280px) {
+@media (min-width: 1280px) {
   .container {
     max-width: 1024px;
   }
 }
-@media screen and (min-height: 721px) {
+@media (min-height: 721px) {
   body {
     margin: 0;
   }
