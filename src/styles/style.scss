@@ -100,8 +100,7 @@ a {
 	text-decoration: none;
 }
 
-img,
-video {
+img {
 	max-width: 100%;
 	height: auto;
 }
@@ -648,6 +647,10 @@ body {
 			color: var(--first-color);
 		}
 
+		& input::placeholder {
+			color: var(--text-color);
+		}
+
 		& select {
 			margin-bottom: 20px;
 		}
@@ -736,13 +739,6 @@ body {
 	.package {
 		&__container {
 			grid-template-columns: repeat(3, max-content);
-		}
-	}
-
-	.subscribe {
-		&__form {
-			width: 470px;
-			margin: 0 auto;
 		}
 	}
 }
@@ -847,6 +843,12 @@ body {
 		}
 	}
 
+	.package {
+		&__container {
+			padding-top: 2rem;
+		}
+	}
+
 	.callus {
 		&__container {
 			grid-template-columns: repeat(2, 1fr);
@@ -861,27 +863,6 @@ body {
 		}
 		&__description {
 			margin-bottom: var(--mb-0-25);
-		}
-	}
-
-	.subscribe {
-		&__bg {
-			background: none;
-			padding: 0;
-		}
-		&__container {
-			background-color: var(--first-color-second);
-			padding: 3.5rem 0;
-		}
-		&__input {
-			padding: 0 0.5rem;
-		}
-	}
-
-	.footer {
-		&__rights {
-			flex-direction: row;
-			justify-content: space-between;
 		}
 	}
 }
@@ -937,10 +918,6 @@ body {
 		&__img {
 			height: 263px;
 		}
-	}
-
-	.footer__content {
-		justify-items: center;
 	}
 }
 
